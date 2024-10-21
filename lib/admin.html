@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #343a40;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .sidebar {
+            width: 20%;
+            float: left;
+            background-color: #343a40;
+            height: 100vh;
+            color: white;
+            padding: 15px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .content {
+            width: 80%;
+            float: right;
+            padding: 20px;
+        }
+        .menu-item {
+            margin: 15px 0;
+            cursor: pointer;
+        }
+        .menu-item:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Admin Dashboard</h1>
+    </div>
+
+    <div class="sidebar">
+        <h3>Menu</h3>
+        <div class="menu-item" onclick="showSection('students')">Manage Students</div>
+        <div class="menu-item" onclick="showSection('teachers')">Manage Teachers</div>
+        <div class="menu-item" onclick="showSection('courses')">Manage Courses</div>
+        <div class="menu-item" onclick="showSection('reports')">Generate Reports</div>
+    </div>
+
+    <div class="content">
+        <div id="students-section">
+            <h2>Manage Students</h2>
+            <button onclick="addStudent()">Add New Student</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic content goes here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="teachers-section" style="display:none;">
+            <h2>Manage Teachers</h2>
+            <!-- Teacher management interface -->
+        </div>
+
+        <div id="courses-section" style="display:none;">
+            <h2>Manage Courses</h2>
+            <!-- Course management interface -->
+        </div>
+
+        <div id="reports-section" style="display:none;">
+            <h2>Generate Reports</h2>
+            <!-- Reports section -->
+        </div>
+    </div>
+
+    <script>
+        function showSection(section) {
+            document.getElementById("students-section").style.display = section === "students" ? "block" : "none";
+            document.getElementById("teachers-section").style.display = section === "teachers" ? "block" : "none";
+            document.getElementById("courses-section").style.display = section === "courses" ? "block" : "none";
+            document.getElementById("reports-section").style.display = section === "reports" ? "block" : "none";
+        }
+
+        function addStudent() {
+            alert("This is where the 'Add Student' form would open.");
+        }
+    </script>
+
+</body>
+</html>

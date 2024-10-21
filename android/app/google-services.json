@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1006797641461",
+    "firebase_url": "https://dumy-38d9e-default-rtdb.firebaseio.com",
+    "project_id": "dumy-38d9e",
+    "storage_bucket": "dumy-38d9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006797641461:android:31b16853b4fa9b4c6fd7bc",
+        "android_client_info": {
+          "package_name": "com.example"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiMmyeSd1Xhn7DOCYIEhr1xEohqHwEplA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006797641461:android:7af425bc5ae6a5e66fd7bc",
+        "android_client_info": {
+          "package_name": "com.example.firebase_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiMmyeSd1Xhn7DOCYIEhr1xEohqHwEplA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006797641461:android:90bcce59f9c634cd6fd7bc",
+        "android_client_info": {
+          "package_name": "com.maxcore.dumy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiMmyeSd1Xhn7DOCYIEhr1xEohqHwEplA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
